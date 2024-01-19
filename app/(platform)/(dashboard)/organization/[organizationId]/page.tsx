@@ -1,5 +1,6 @@
 import { OrganizationSwitcher, auth } from '@clerk/nextjs';
 import React from 'react';
+import { Organization } from '@clerk/nextjs/server';
 
 const SingleOrganizationPage = ({
   params,
@@ -7,7 +8,7 @@ const SingleOrganizationPage = ({
   params: { organizationId: string };
 }) => {
   const { userId, orgId } = auth();
-  return <div>{/* <OrganizationSwitcher hidePersonal /> */}</div>;
+  return <div>Organization</div>;
 };
 
 export default SingleOrganizationPage;
