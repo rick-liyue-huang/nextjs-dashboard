@@ -8,7 +8,19 @@ const SingleOrganizationPage = ({
   params: { organizationId: string };
 }) => {
   const { userId, orgId } = auth();
-  return <div>Organization</div>;
+  return (
+    <div>
+      <form>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          required
+          placeholder="enter the title..."
+        />
+      </form>
+    </div>
+  );
 };
 
 export default SingleOrganizationPage;
